@@ -29,6 +29,11 @@ dependencies {
 	annotationProcessor "org.projectlombok:lombok"
 	testCompileOnly "org.projectlombok:lombok"
 	testAnnotationProcessor "org.projectlombok:lombok"
+
+	// Mybatis
+	implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.4'
+	// mysql JDBC 라이브러리
+	runtimeOnly 'com.mysql:mysql-connector-j'
 }
 
 tasks.named('test') {
